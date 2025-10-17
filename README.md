@@ -13,7 +13,7 @@
         <td>timestamp</td><td colspan="3">[int]</td><td></td>
     </tr>
     <tr>
-        <td rowspan="9">data</td><td rowspan="9">[list[dict[str,any]]]</br>右表为字典键值对参数</td><td>id</td><td>int</td><td>张润程给出的是[str]但是sqlite自动生成的是[int]</br>或许要后续协商一下</td>
+        <td rowspan="9">data</td><td rowspan="9">[list[dict[str,any]]]</br>右表为字典键值对参数</td><td>id</td><td>int</td><td></td>
     </tr>
     <tr>
         <td>source</td><td>yuque|wechat|qq|web</td><td>显然不能涵盖全部，待补充</td>
