@@ -4,6 +4,7 @@ import time
 
 def insert(data: dict):
     conn = sqlite3.connect('database.db')
+    conn.execute("PRAGMA foreign_keys = ON")
     cur = conn.cursor()
     '''
     希望获得的数据形如：

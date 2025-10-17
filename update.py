@@ -14,6 +14,7 @@ def update(id, data):
     try:
         # 更新指定信息
         conn = sqlite3.connect('database.db')
+        conn.execute("PRAGMA foreign_keys = ON")
         cur = conn.cursor()
         updated_time = int(time.time())
         data['updated_at'] = updated_time         # 更新时间也要更新
